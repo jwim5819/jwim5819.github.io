@@ -1,0 +1,142 @@
+theme: jekyll-theme-chirpy
+
+lang: ko-KR
+
+timezone: Asia/Seoul
+
+title: Jwim5819's Blog
+
+tagline: Devops Engineer
+
+description: >-
+  Jaewon의 끄적끄적 개발 블로그
+
+url: "https://jwim5819.github.io"
+
+github:
+  username: jwim5819
+
+social:
+  name: jwim5819
+  email: jwim5819@gmail.com
+  links:
+    - https://github.com/jwim5819
+
+google-site-verification: 
+
+google_analytics:
+  id: # fill in your Google Analytics ID
+
+theme_mode:	[light]
+
+img_cdn:
+
+avatar: /assets/img/free-icon-bread-3348021.png
+
+social_preview_image:
+
+toc: true
+
+comments:
+  active: utterances
+  disqus:
+    shortname:
+  utterances:
+    repo: jwim5819/jwim5819.github.io
+    issue_term: pathname
+    label: Comment
+  giscus:
+    repo:
+    repo_id:
+    category:
+    category_id:
+    mapping:
+    input_position:
+    lang:
+    reactions_enabled:
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+
+paginate: 10
+
+baseurl: ""
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - rollup.config.js
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

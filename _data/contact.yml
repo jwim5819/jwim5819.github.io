@@ -1,0 +1,24 @@
+#  The contact options.
+
+- type: github
+  icon: "fab fa-github"
+
+- type: tistory
+  icon: "fa-solid fa-t"
+#  <i class="fa-solid fa-blog"></i>
+
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true # open link in current tab
+
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
+#
+# - type: linkedin
+#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+#   url:  ''                  # Fill with your Linkedin homepage
+#
+# - type: stack-overflow
+#   icon: 'fab fa-stack-overflow'
+#   url:  ''                  # Fill with your stackoverflow homepage
