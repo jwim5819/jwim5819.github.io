@@ -1,12 +1,12 @@
 theme: jekyll-theme-chirpy
 
-lang: ko-KR
+lang: en-US
 
 timezone: Asia/Seoul
 
-title: Jwim5819's Blog
+title: Jaewon's Blog
 
-tagline: Devops Engineer
+tagline: DevOps Engineer
 
 description: >-
   Jaewon의 끄적끄적 개발 블로그
@@ -31,7 +31,7 @@ theme_mode:	[light]
 
 img_cdn:
 
-avatar: /assets/img/free-icon-bread-3348021.png
+avatar: https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1670808982/noticon/rsidlbh01eu3ycxond0r.gif
 
 social_preview_image:
 

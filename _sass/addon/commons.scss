@@ -711,11 +711,13 @@ $btn-mb: 0.5rem;
   }
 
   #avatar {
-    display: block;
-    width: 7rem;
-    height: 7rem;
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 8.5rem;
+    height: 8.5rem;
     overflow: hidden;
-    box-shadow: var(--avatar-border-color) 0 0 0 2px;
+    box-shadow: transparent 0 0 0 2px; /* 경계선 색상을 투명하게 설정 */
     transform: translateZ(0); /* fixed the zoom in Safari */
 
     img {

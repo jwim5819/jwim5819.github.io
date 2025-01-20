@@ -3,9 +3,9 @@
 - type: github
   icon: "fab fa-github"
 
-- type: tistory
-  icon: "fa-solid fa-t"
-#  <i class="fa-solid fa-blog"></i>
+# - type: tistory
+#   icon: "fa-solid fa-t"
+# #  <i class="fa-solid fa-blog"></i>
 
 - type: email
   icon: "fas fa-envelope"
