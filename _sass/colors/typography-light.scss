@@ -14,8 +14,8 @@
   --text-muted-hightlight-color: inherit;
   --heading-color: #2a2a2a;
   --label-color: #585858;
-  --blockquote-border-color: #eeeeee;
-  --blockquote-text-color: #757575;
+  --blockquote-border-color: #20C997;
+  --blockquote-text-color: hsl(0, 0%, 33%);
   --link-color: #0056b2;
   --link-underline-color: #dee2e6;
   --button-bg: #ffffff;
@@ -40,11 +40,11 @@
   /* Sidebar */
   --site-title-color: rgb(113, 113, 113);
   --site-subtitle-color: #717171;
-  --sidebar-bg: #f6f8fa;
+  --sidebar-bg: #edf2f7;
   --sidebar-border-color: #efefef;
   --sidebar-muted-color: #545454;
   --sidebar-active-color: #1d1d1d;
-  --sidebar-hover-bg: rgb(223, 233, 241, 0.64);
+  --sidebar-hover-bg: hsla(206, 11%, 72%, 0.664);
   --sidebar-btn-bg: white;
   --sidebar-btn-color: #8e8e8e;
   --avatar-border-color: white;

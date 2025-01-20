@@ -1,6 +1,6 @@
 ---
 title : k8s의 자원 관리(QoS)
-date : 2024-04-17 23:00:00 +09:00
+date : 2024-06-17 23:00:00 +09:00
 categories : [Development, Kubernetes]
 tags : [Kubernetes, Resource, QoS]
 ---
