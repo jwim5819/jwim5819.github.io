@@ -65,28 +65,28 @@ tags : [Kubernetes, Resource, QoS]
         apiVersion: apps/v1
         kind: Deployment
         metadata:
-        name: stress-01
-        namespace: stress
+          name: stress-01
+          namespace: stress
         spec:
-        replicas: 1
-        selector:
+          replicas: 1
+          selector:
             matchLabels:
-            app: stress-01
-        template:
+              app: stress-01
+          template:
             metadata:
-            labels:
+              labels:
                 app: stress-01
             spec:
-            containers:
-            - name: stress-01
-                image: polinux/stress
-                resources:
-                requests:
-                    memory: "2000Mi"
-                limits:
-                    memory: "3000Mi"
-                command: ["stress"]
-                args: ["--vm", "1", "--vm-bytes", "5000M", "--vm-hang", "1", "--vm-keep"]
+              containers:
+                - name: stress-01
+                  image: polinux/stress
+                  resources:
+                    requests:
+                      memory: "2000Mi"
+                    limits:
+                      memory: "3000Mi"
+                  command: ["stress"]
+                  args: ["--vm", "1", "--vm-bytes", "5000M", "--vm-hang", "1", "--vm-keep"]
         ```
 
     - 배포
