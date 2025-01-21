@@ -195,7 +195,7 @@ curl -sL https://github.com/derailed/k9s/releases/download/${K9S_VERSION}/k9s_Li
 
 ## ⚠️ 트러블 슈팅
 
-> **unknown service runtime.v1alpha2.RuntimeService**
+> **kubeadm init 시 -> unknown service runtime.v1alpha2.RuntimeService**
 >
 > - 컨테이너 런타임에서 CRI 기능을 비활성화 한 경우이므로 아래 작업을 진행
 {: .prompt-danger }
@@ -206,7 +206,7 @@ sudo vi /etc/containerd/config.toml
 sudo systemctl restart containerd.service
 ```
 
-> **ERROR FileContent--proc-sys-net-ipv4-ip_forward]: /proc/sys/net/ipv4/ip_forward contents are not set to 1**
+> **kubeadm init 시 -> ERROR FileContent--proc-sys-net-ipv4-ip_forward]: /proc/sys/net/ipv4/ip_forward contents are not set to 1**
 >
 > - 에러 메세지 그대로 /proc/sys/net/ipv4/ip_forward값을 1로 설정하라는 메세지.
 > - /proc/sys/net/ipv4/ip_forward는 패킷을 포워딩하는 옵션정보가 담겨있는 파일인데 0으로 설정되어 있으면 비활성화, 1로 설정되어 있으면 활성화된 것이다.
