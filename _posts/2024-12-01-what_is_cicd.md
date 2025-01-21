@@ -1,8 +1,8 @@
 ---
-title : CI/CD 구축기 - 1. CI/CD란?
-date : 2024-12-01 23:00:00 +09:00
-categories : [Development, DevOps]
-tags : [Kubernetes, Infra, CICD, DevOps]
+title: CI/CD 구축기 - 1. CI/CD란?
+date: 2024-12-01 23:00:00 +09:00
+categories: [Development, DevOps]
+tags: [Kubernetes, Infra, CICD, DevOps]
 ---
 
 ![1](assets\post_imgs\2024-12-01-what_is_cicd\1.png)
@@ -22,7 +22,7 @@ tags : [Kubernetes, Infra, CICD, DevOps]
   - 코드 품질 향상
   - 팀 간 협업 효율 증대
   - 배포 주기 단축
-- **예시 툴**: ```Jenkins```, ```GitLab CI/CD```, ```CircleCI```, ```Travis CI```
+- **예시 툴**: `Jenkins`, `GitLab CI/CD`, `CircleCI`, `Travis CI`
 
 ## **2. CD란? (Continuous Delivery / Continuous Deployment)**
 
@@ -53,4 +53,4 @@ tags : [Kubernetes, Infra, CICD, DevOps]
   - 반복 작업 감소
   - 신뢰성 있는 배포 프로세스
   - 고객 요구사항 반영 속도 증가
-- **예시 툴**: ```ArgoCD```, ```Spinnaker```, ```AWS CodePipeline```
+- **예시 툴**: `ArgoCD`, `Spinnaker`, `AWS CodePipeline`

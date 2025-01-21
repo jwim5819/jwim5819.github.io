@@ -1,8 +1,8 @@
 ---
-title : helm chart에 포함된 이미지 식별
-date : 2024-04-15 23:00:00 +09:00
-categories : [Development, Kubernetes]
-tags : [Kubernetes, Helm]
+title: helm chart에 포함된 이미지 식별
+date: 2024-04-15 23:00:00 +09:00
+categories: [Development, Kubernetes]
+tags: [Kubernetes, Helm]
 ---
 
 ## 개요
@@ -12,12 +12,12 @@ tags : [Kubernetes, Helm]
 
 ## 방법
 
-- ```helm template``` 명령어 사용
-- 현재 ```values.yaml``` 값을 기반으로 생성될 manifest의 내용에서 ```image:``` 필드의 값을 추출하여 정렬하는 방식이다.
+- `helm template` 명령어 사용
+- 현재 `values.yaml` 값을 기반으로 생성될 manifest의 내용에서 `image:` 필드의 값을 추출하여 정렬하는 방식이다.
 
-    ```bash
-    helm template . | grep image: | sed -e 's/[ ]*image:[ ]*//' -e 's/"//g' | sort -u -> 파일명
-    ```
+  ```bash
+  helm template . | grep image: | sed -e 's/[ ]*image:[ ]*//' -e 's/"//g' | sort -u -> 파일명
+  ```
 
 ## 예시
 
@@ -25,26 +25,27 @@ tags : [Kubernetes, Helm]
 
 - helm chart 저장소 등록
 
-    ```bash
-    helm repo add gitlab https://charts.gitlab.io/
-    ```
+  ```bash
+  helm repo add gitlab https://charts.gitlab.io/
+  ```
 
 - helm repo 업데이트
 
-    ```bash
-    helm repo update
-    ```
+  ```bash
+  helm repo update
+  ```
 
 - helm chart 검색
 
-    ```bash
-    helm search repo gitlab
-    ```
+  ```bash
+  helm search repo gitlab
+  ```
 
 ![1](assets\post_imgs\2024-04-15-k8s_helm_extract\1.png)
 
 - helm chart pull
-  - ```helm pull {repo}/{chart} --version {version}```
+
+  - `helm pull {repo}/{chart} --version {version}`
 
     ```bash
     helm pull gitlab/gitlab
@@ -54,16 +55,16 @@ tags : [Kubernetes, Helm]
 
 - 이미지만 식별
 
-    ```bash
-    helm template . | grep image: | sed -e 's/[ ]*image:[ ]*//' -e 's/"//g' | sort -u
-    ```
+  ```bash
+  helm template . | grep image: | sed -e 's/[ ]*image:[ ]*//' -e 's/"//g' | sort -u
+  ```
 
 ![2](assets\post_imgs\2024-04-15-k8s_helm_extract\2.png)
 
 - manifest 자체를 추출하고 싶을 경우
 
-    ```bash
-    helm template . > export.yaml
+  ```bash
+  helm template . > export.yaml
 
-    # namespace, release name 등을 명령어에 포함시키면 적용되어 추출됨.
-    ```
+  # namespace, release name 등을 명령어에 포함시키면 적용되어 추출됨.
+  ```

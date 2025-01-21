@@ -1,8 +1,8 @@
 ---
-title : CI/CD 구축기 - 2. 프로젝트 구성
-date : 2024-12-14 23:00:00 +09:00
-categories : [Development, DevOps]
-tags : [Kubernetes, Infra, CICD, DevOps]
+title: CI/CD 구축기 - 2. 프로젝트 구성
+date: 2024-12-14 23:00:00 +09:00
+categories: [Development, DevOps]
+tags: [Kubernetes, Infra, CICD, DevOps]
 ---
 
 ![1](assets\post_imgs\2024-12-14-cicd_project_architecture\1.png)
