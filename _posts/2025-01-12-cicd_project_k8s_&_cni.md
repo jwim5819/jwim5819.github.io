@@ -111,7 +111,7 @@ kubectl version
 kubelet --version
 ```
 
-## 🛳️CRI(Container Runtime Interface)설치
+## 🛳️ CRI(Container Runtime Interface)설치
 
 ### 1. docker gpg키 추가
 
