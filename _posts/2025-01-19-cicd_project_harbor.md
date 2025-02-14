@@ -2,7 +2,7 @@
 title: CI/CD 구축기 - 7. Harbor 설치 및 SSO 연동
 date: 2025-01-19 23:00:00 +09:00
 categories: [Development, DevOps]
-tags: [Kubernetes, Infra, DevOps, Harbor, Keycloak, SSO]
+tags: [Kubernetes, Infra, DevOps, Harbor, Keycloak, SSO, CICD]
 ---
 
 ## 🛠️ Harbor 설치

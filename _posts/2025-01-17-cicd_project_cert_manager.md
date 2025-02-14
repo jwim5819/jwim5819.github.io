@@ -2,7 +2,7 @@
 title: CI/CD 구축기 - 5. cert-manager 설치 및 검증
 date: 2025-01-17 23:00:00 +09:00
 categories: [Development, DevOps]
-tags: [Kubernetes, Infra, DevOps, Nginx, Cert]
+tags: [Kubernetes, Infra, DevOps, Nginx, Cert, CICD]
 ---
 
 ## 🔒 서론

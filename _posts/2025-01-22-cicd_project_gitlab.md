@@ -2,7 +2,7 @@
 title: CI/CD 구축기 - 8. Gitlab 설치 및 설정
 date: 2025-01-22 23:00:00 +09:00
 categories: [Development, DevOps]
-tags: [Kubernetes, Infra, DevOps, Git, Gitlab, Keycloak, SSO]
+tags: [Kubernetes, Infra, DevOps, Git, Gitlab, Keycloak, SSO, CICD]
 ---
 
 ## 😺 Gitlab 설치 (Helm)

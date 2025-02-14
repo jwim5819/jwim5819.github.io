@@ -2,7 +2,7 @@
 title: CI/CD 구축기 - 6. keycloak 설치
 date: 2025-01-18 23:00:00 +09:00
 categories: [Development, DevOps]
-tags: [Kubernetes, Infra, DevOps, Keycloak, SSO]
+tags: [Kubernetes, Infra, DevOps, Keycloak, SSO, CICD]
 ---
 
 ## 🔒 서론
